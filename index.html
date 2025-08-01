@@ -9,6 +9,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="./assets/css/bootstrap.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/media.css" />
 </head>
 
@@ -92,25 +93,54 @@
     </section>
 
     <!-- Review Section -->
-    <section id="reviews" class="text-center">
-      <h2>Customer Reviews</h2>
-      <div id="reviewCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p>"Amazing quality watch. Fast delivery too!"</p>
-          </div>
-          <div class="carousel-item">
-            <p>"Very satisfied with my purchase. Worth every penny!"</p>
+<section id="reviews" class="text-center container py-5">
+    <h2>Customer Reviews</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <p>"Amazing quality and fast delivery!"</p>
+          <div class="d-flex align-items-center justify-content-center pt-2">
+            <img src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" class="review-img" alt="Jane Doe" />
+            <div>
+              <h5 class="mb-0">Jane Doe</h5>
+              <small class="text-secondary">CEO, Example Company</small>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <p>"Stylish and durable watches. Highly recommend!"</p>
+          <div class="d-flex align-items-center justify-content-center pt-2">
+            <img src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png" class="review-img" alt="June Doe" />
+            <div>
+              <h5 class="mb-0">June Doe</h5>
+              <small class="text-secondary">Designer, Creative Studio</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <p>"Bought one for my husband, and he loved it!"</p>
+          <div class="d-flex align-items-center justify-content-center pt-2">
+            <img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" class="review-img" alt="John Doe" />
+            <div>
+              <h5 class="mb-0">John Doe</h5>
+              <small class="text-secondary">Developer, TechCorp</small>
+            </div>
+          </div>
+        </div>
+        <!-- Add more slides as needed -->
       </div>
-    </section>
+
+      <!-- Navigation buttons -->
+      <!-- <div class="swiper-button-next text-white"></div> -->
+      <!-- <div class="swiper-button-prev text-white"></div> -->
+      <!-- <div class="swiper-pagination mt-3"></div> -->
+    </div>
+  </section>
   </main>
 
   <!-- Footer -->
@@ -120,7 +150,32 @@
 
   <!-- Scripts -->
   <script src="./assets/js/bootstrap-bundel.js"></script>
+  <script src="./assets/js/swiper.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./assets/js/script.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>
