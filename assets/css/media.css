@@ -15,6 +15,13 @@
     height: 200px;
   }
 
+  .swiper-button-next{
+    display: none !important;
+  }
+  .swiper-button-prev{
+    display: none !important;
+  }
+
   #reviewCarousel p {
     font-size: 1rem;
   }
