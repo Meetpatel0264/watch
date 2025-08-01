@@ -1,0 +1,30 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #ffffff33;
+  padding-bottom: 10px;
+}
+
+footer {
+  border-top: 1px solid #ffffff22;
+}
+
+.btn-light {
+  border-radius: 25px;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+#reviewCarousel p {
+  font-size: 1.2rem;
+  font-style: italic;
+  padding: 20px;
+}

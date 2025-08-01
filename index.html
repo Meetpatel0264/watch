@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WatchZone - Online Watch Store</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/media.css" />
+</head>
+
+<body class="bg-black text-white">
+  <!-- Header -->
+  <header class="p-4 text-center bg-dark shadow">
+    <h1 class="display-5">WatchZone</h1>
+    <p>Premium Watches at Your Fingertips</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-start text-bg-dark" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <!-- Home Section -->
+    <section id="home" class="mb-5 text-center">
+      <h2>Welcome to WatchZone</h2>
+      <p>Discover premium quality watches delivered to your doorstep. Order via WhatsApp now!</p>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="mb-5">
+      <h2>Featured Watches</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow">
+            <img src="https://images.unsplash.com/photo-1511381939415-c1b8f8ecb72f" class="card-img-top img-fluid" alt="Watch 1" />
+            <div class="card-body">
+              <h5 class="card-title">Classic Silver</h5>
+              <p class="card-text">Elegant design for all occasions.</p>
+              <a href="https://wa.me/919099190296?text=I'm%20interested%20in%20Classic%20Silver" class="btn btn-light">Buy on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" class="card-img-top img-fluid" alt="Watch 2" />
+            <div class="card-body">
+              <h5 class="card-title">Sporty Black</h5>
+              <p class="card-text">Modern and bold for every outfit.</p>
+              <a href="https://wa.me/919099190296?text=I'm%20interested%20in%20Sporty%20Black" class="btn btn-light">Buy on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card bg-secondary text-white h-100 shadow">
+            <img src="https://images.unsplash.com/photo-1503342452485-86b7f54527dd" class="card-img-top img-fluid" alt="Watch 3" />
+            <div class="card-body">
+              <h5 class="card-title">Luxury Gold</h5>
+              <p class="card-text">Shine bright with elegance.</p>
+              <a href="https://wa.me/919099190296?text=I'm%20interested%20in%20Luxury%20Gold" class="btn btn-light">Buy on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+    <section id="reviews" class="text-center">
+      <h2>Customer Reviews</h2>
+      <div id="reviewCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>"Amazing quality watch. Fast delivery too!"</p>
+          </div>
+          <div class="carousel-item">
+            <p>"Very satisfied with my purchase. Worth every penny!"</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-center py-3">
+    <p>&copy; 2025 WatchZone. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/bootstrap-bundel.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
