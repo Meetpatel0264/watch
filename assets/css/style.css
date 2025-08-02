@@ -136,3 +136,19 @@ footer {
   font-size: 0.9rem;
 }
 
+.section-background-color{
+  background-color: #212529 !important;
+}
+
+.contact-info {
+  background-color: #1f1f1f !important;
+}
+
+.card-body-bg {
+  background-color: #1f1f1f !important;
+}
+
+.WatchZone-bg{
+  background-color: #1f1f1f !important;
+
+}
